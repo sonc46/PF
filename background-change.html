@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>background-change</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+	/* javascript */
+var backgrounds = ["white", "yellow", "aqua", "purple"],
+	index = 0;
+
+function changeColor(){
+	index < backgrounds.length-1 ? index++ : index = 0;	
+
+	var bodyTag = document.getElementById("changeBody");
+	bodyTag.style.backgroundColor = backgrounds[index];
+}
+
+/* jquery */
+// $(function(){
+// 	var bodyTag = $("#changeBody"),
+// 		backgrounds = ["white", "yellow", "aqua", "purple"],
+// 		bgChangeButton = $(".bgchangebutton"),
+// 		index = 0;
+	
+// 	bgChangeButton.click(function(){
+// 		index < backgrounds.length-1 ? index++ : index = 0;	
+// 		bodyTag.css("backgroundColor", backgrounds[index]);
+// 	});
+// });
+
+	</script>
+</head>
+<body id="changeBody">
+	<button onclick="changeColor();">next background</button>
+	<!-- <button class="bgchangebutton">next background</button> -->
+</body>
+</html>

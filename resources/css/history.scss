@@ -3,6 +3,26 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+button {cursor:pointer;}
+
+.toggle-navigation.open {
+	left: 0;
+}
+.toggle-navigation {
+	position: fixed;
+	top: 0;
+	left: -20%;
+	z-index: 40;
+	width: 20%;
+	height: 100%;
+	background: red;
+	transition: left .3s;
+}
+.toggle-navigation-button {
+	position: absolute;
+	top: 50%;
+	right: -40px;
+}
 
 .tiles:nth-child(1) .tile {
 	border-color: steelblue;
@@ -16,6 +36,10 @@
 	width: 75%;
 	margin: 1% 1% 1% 24%;
 
+	h2 {
+		width: 100%;
+		padding-left: 1%;
+	}
 	.tile {
 		width: 23%;
 		padding: 2%;
