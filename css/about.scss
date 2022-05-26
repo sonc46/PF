@@ -1,0 +1,154 @@
+.moto {
+	display: flex;
+	align-items: center;
+	height: 500px;
+	border-bottom: 4px solid var(--mainColor);
+
+	p {
+		font-weight: 900;
+		font-size: 60px;
+		font-family: 'Gothic A1', sans-serif;
+	}
+}
+
+h2 {
+	padding: 1em 0 2em;
+	font-size: 22px;
+	font-weight: 700;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.characters {
+	padding: 0 0 200px;
+	border-bottom: 4px solid var(--mainColor);
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+
+		li {
+			width: 25%;
+			max-width: 320px;
+			text-align: center;
+
+			span.thumb {
+				display: block;
+				width: 100%;
+				padding: 0 0 100%;
+				margin: 0 auto;
+				border: 1px solid var(--borderColor1);
+			}
+			span.name {
+				display: block;
+				margin: 1em 0 0;
+				font-size: 15px;
+
+				strong {
+					display: block;
+					font-weight: 500;
+					font-size: 18px;
+				}
+			}
+
+		}
+	}
+}
+
+.interest {
+	padding: 0 0 100px;
+
+	ul {
+		li {
+			display: flex;
+			justify-content: space-between;
+
+			.info {
+				width: 60%;
+				padding: 0 10%;
+
+				strong {
+					display: block;
+					font-size: 46px;
+					font-weight: 700;
+				}
+				span {
+					display: block;
+					margin: 1em 0 0;
+					font-size: 24px;
+				}
+			}
+			.thumb {
+				width: 40%;
+				max-width: 800px;
+				height: 500px;
+				background-color: var(--mainColor);
+			}
+		}
+	}
+}
+
+.other-interest {
+	margin: 0 0 100px;
+
+	ul {
+		overflow: hidden;
+
+		li {
+			float: left;
+			width: 7.142857142857143%;
+			padding: 0 10px;
+			margin: 30px 0;
+			text-align: center;
+
+			span.thumb {
+				display: block;
+				margin: 0 auto;
+				width: 70%;
+				padding: 0 0 70%;
+				background-color: var(--mainColor);
+				border-radius: 50%;
+			}
+			strong {
+				display: block;
+				margin: 12px 0 0;
+				font-weight: 300;
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+.history {
+	padding: 0 0 200px;
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		
+		li {
+			width: 19%;
+			margin: 0 0 0 8%;
+
+			.thumb {
+				display: block;
+				width: 100%;
+				padding: 0 0 80%;
+				background-color: var(--mainColor);
+			}
+			strong {
+				display: block;
+				margin: .75em 0 .375em;
+				font-weight: 500;
+				font-size: 20px;
+			}
+			P {
+				margin: 0 0 3em;
+				font-weight: 300;
+				font-size: 14px;
+			}
+		}
+		li:nth-child(4n+1) {
+			margin: 0;
+		}
+	}
+}
