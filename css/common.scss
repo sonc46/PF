@@ -7,6 +7,10 @@
 	--side: 10%;
 }
 
+.test {
+	width: calc(100% - 40px);
+}
+
 * {
 	padding: 0;
 	margin: 0;
